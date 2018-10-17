@@ -1,0 +1,433 @@
+/* start css buat all */
+select[readonly].select2-hidden-accessible + .select2-container {
+  pointer-events: none;
+  touch-action: none;
+
+  .select2-selection {
+    background: #eee;
+    box-shadow: none;
+  }
+
+  .select2-selection__arrow,
+  .select2-selection__clear {
+    display: none;
+  }
+}
+
+select[readonly] {
+  pointer-events: none;
+  touch-action: none;
+}
+
+
+a[disabled] {
+  pointer-events: none;
+  touch-action: none;
+}
+
+
+.hiddenprint{
+	 visibility: hidden;
+	 position:fixed;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #areaprint, #areaprint * {
+    visibility: visible;
+  }
+  #areaprint {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width:100%;
+  }
+
+  .areaprint, .areaprint * {
+    visibility: visible;
+	max-width:960px;
+  }
+  .areaprint {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width:100%;
+  }
+
+  .areaprint input{
+    -moz-appearance: textfield;
+  	border-style:none;
+    border:none;
+    background-image:none;
+    box-shadow:none;
+  }
+
+  .areaprint select{
+  	border-style:none;
+    border:none;
+    background-image:none;
+    box-shadow:none;
+  }
+
+  .nonprint{
+  	display:none;
+  }
+
+  .close{
+  	display:none;
+  }
+}
+
+body {
+  background-color: rgb(252,252,252);
+}
+
+input, select, textarea {
+    font-size: 16px;
+}
+
+.body
+{
+	min-height:550px;
+}
+
+#sidemenu h3{
+	padding-left:10px;
+	font-weight:bold;
+	color:rgb(0,52,108);
+	border-bottom:1px solid rgb(0,52,108);
+}
+
+#sidemenu a{
+	padding-left:10px;
+	font-weight:bold;
+	color:rgb(50,52,50);
+}
+
+#navbar-text{
+	position:absolute;
+	top:3px;
+	left:50px;
+	font-size:18px;
+	color:rgb(100,100,100);
+}
+
+.affix{top:0;z-index:500;width:100%;}
+
+#navbar{
+	width:100%;
+  }
+
+.dropdown-menu
+{
+z-index:3000;
+}
+
+
+/* end css all ->start css nav */
+.navbar-brand 
+{
+	position:absolute;
+	z-index:400;
+}
+
+.nav-upper
+{
+height:70px;
+}
+
+.navbar-brand img
+{
+	height:30px;
+}
+
+.nav-user{
+z-index:3000;
+margin-left:75px;
+margin-top:17px;
+}
+
+
+.jumbotron
+{
+	padding:0px !important;
+}
+
+
+/* End of Navbar setting cuk*/
+
+/*sign in = masuk*/
+
+
+.form-login {
+	display:block;
+    background-color: rgb(253,253,253);
+	margin:auto;
+	margin-top:50px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10px;
+    border-color:#d2d2d2;
+    border-width: 5px;
+    box-shadow:0 1px 2px rgb(150,150,150);
+}
+
+/* End signin */
+
+
+.btn-primary
+{
+	background:rgb(0,142,208);
+}
+
+.btn-primary:hover
+{
+background: rgb(0,112,178);
+}
+
+.btn-info
+{
+background: rgb(0,142,208);
+}
+
+.btn-info:hover
+{
+background: rgb(0,112,178);
+}
+
+
+#logingagal{
+	background:rgba(255,0,0,.4);
+	padding:5px;
+	margin:20px 0;
+	border-radius:5px;
+	text-align:center;
+}
+
+
+table.form{
+	font-size:14px;
+}
+
+table.form input{
+	margin-left:20px;
+	width:250px;
+	margin-bottom:5px;
+}
+
+table.form select{
+	margin-left:20px;
+	width:250px;
+	margin-bottom:5px;
+}
+table.form .namaakun{
+	margin-left:0px;
+	width:200px;
+	margin-bottom:5px;
+}
+
+table.form .akun{
+	margin-left:20px;
+	width:125px;
+	margin-bottom:5px;
+}
+
+table.form textarea{
+	margin-left:20px;
+	width:250px;
+	margin-bottom:5px;
+}
+
+.nonaktif{
+	background:rgb(200,200,200);
+}
+
+.deskripsi_dokumen
+{
+	width:100%;
+}
+
+.deskripsi_dokumen tr td
+{
+	padding:2px;
+}
+
+.jurnal{
+	border:1px solid rgb(200,200,200);
+}
+
+.juduljurnal{
+	background: rgb(0,142,208);
+	color:white;
+	padding:5px;
+}
+
+.jurnalauto{float:right;margin:7px;font-weight:bold;}
+
+.juduljurnal .btn{
+}
+
+.kredit{margin-left:20px;}
+
+.deskripsi_dokumen tr th
+{
+	border-bottom:1px solid rgb(150,150,150);
+	padding-bottom:4px;
+}
+
+.deskripsi_dokumen td.kanan 
+{
+	border-left:1px solid rgb(150,150,150);
+	padding-left:5px;
+}
+
+.icon{height:25px;margin-right:10px;}
+
+
+.nakun.lv2{padding-left:40px;}
+.nakun.lv3{padding-left:80px;}
+
+
+.deskripsi_dokumen
+{
+	width:100%;
+}
+
+.deskripsi_dokumen tr td
+{
+	padding:2px;
+}
+
+.jurnal{
+	border:1px solid rgb(200,200,200);
+}
+
+.juduljurnal{
+	background: rgb(0,142,208);
+	color:white;
+	padding:5px;
+}
+
+.jurnalauto{float:right;margin:7px;font-weight:bold;}
+
+.juduljurnal .btn{
+}
+
+.kredit{margin-left:20px;}
+
+.deskripsi_dokumen tr th
+{
+	border-bottom:1px solid rgb(150,150,150);
+	padding-bottom:4px;
+}
+
+.deskripsi_dokumen td.kanan 
+{
+	border-left:1px solid rgb(150,150,150);
+	padding-left:5px;
+}
+
+.icon{height:25px;margin-right:10px;}
+
+.dokumen{background:white;padding:10px;box-shadow:0px 1px 2px rgb(100,100,100);padding-bottom:30px;}
+
+.fjurnal{width:90%;margin:auto;margin-top:20px; }
+
+.bisnis{width:150px !important;}
+
+.form.detail{
+	width:100%;
+}
+
+.form.detail input{
+	margin-left:0px;
+}
+
+.form.detail .long{
+	width:300px;
+}
+
+.form.detail .short{
+	width:50px;
+}
+
+ .progressContainer {
+      margin: auto; 
+      padding:20px 0px;
+      margin-bottom:50px;
+  }
+
+
+ .progressContainer a{
+      color:black;
+  }
+
+ .active a{
+     color: green;
+  }
+
+
+  .progressbar {
+      counter-reset: step;
+      padding:0px;
+  }
+  .progressbar li {
+      list-style-type: none;
+      width: 20%;
+      float: left;
+      font-size: 12px;
+      position: relative;
+      text-align: center;
+      text-transform: uppercase;
+      color: #7d7d7d;
+  }
+  .progressbar li:before {
+      width: 30px;
+      height: 30px;
+      content: counter(step);
+      counter-increment: step;
+      line-height: 30px;
+      border: 2px solid #7d7d7d;
+      display: block;
+      text-align: center;
+      margin: 0 auto 10px auto;
+      border-radius: 50%;
+      background-color: white;
+  }
+  .progressbar li:after {
+      width: 100%;
+      height: 2px;
+      content: '';
+      position: absolute;
+      background-color: #7d7d7d;
+      top: 15px;
+      left: -50%;
+      z-index: -1;
+  }
+  .progressbar li:first-child:after {
+      content: none;
+  }
+  .progressbar li.active {
+      color: green;
+  }
+
+
+  .progressbar li.sekarang {
+      color: rgb(0,112,178);
+  }
+
+  .progressbar li.active:before {
+      border-color: #55b776;
+  }
+
+
+  .progressbar li.sekarang:before {
+      border-color: rgb(0,112,178);
+  }
+  .progressbar li.active + li.active:after {
+      background-color: #55b776;
+  }
