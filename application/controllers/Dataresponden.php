@@ -15,6 +15,7 @@ class Dataresponden extends CI_Controller {
 		
 		//code
 		if($this->input->post()){
+			//Membuka model dataresponden
 			$this->load->model('m_DataResponden');
 
 			$hasil = $this->m_DataResponden->submit();
