@@ -78,6 +78,8 @@ class Instruksi extends CI_Controller {
 	}
 
 	private function isi1(){
+		//skrip untuk mengisi data awal kasus peserta
+		//simple kode insert database
 		$peserta = $this->session->userdata("id");
 		$this->load->database();
 
@@ -244,6 +246,8 @@ class Instruksi extends CI_Controller {
 	}
 
 	private function isi2(){
+		//skrip untuk mengisi data awal kasus peserta
+		//simple kode insert database
 		$peserta = $this->session->userdata("id");
 		$this->load->database();
 

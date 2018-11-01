@@ -57,12 +57,13 @@ class Soal extends CI_Controller {
 		$this->session->set_userdata("navigasi",$navigasi);
 		$this->session->set_userdata("panduan",$panduan);
 
+
 		if($status == 3 && $urutan == 1) $hal = "konf1";
 		if($status == 5 && $urutan == 1) $hal = "konf2";
 		if($status == 3 && $urutan == 2) $hal = "konf2";
 		if($status == 5 && $urutan == 2) $hal = "konf1";
 
-
+		//mengatur urutan soal yang muncul, urutan 1 = soal 1 duluan dst
 		if($status == 3 && $urutan == 1) $soal = "soal1";
 		if($status == 5 && $urutan == 1) $soal = "soal2";
 		if($status == 3 && $urutan == 2) $soal = "soal2";
@@ -90,6 +91,7 @@ class Soal extends CI_Controller {
 		$urutan = $peserta->peserta_urutan;
 		$status = $peserta->peserta_status;
 
+		//mengatur soal berikutnya yang muncul sesuai urutan
 		if($status == 2 && $urutan == 1) $status = "3";
 		if($status == 4 && $urutan == 1) $status = "5";
 		if($status == 2 && $urutan == 2) $status = "3";
